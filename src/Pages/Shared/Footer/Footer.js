@@ -14,19 +14,19 @@ const Footer = () => {
                     <hr className=" w-100 d-md-none pb-0" />
 
                     <div className="col-md-4 mb-md-0 mb-3">
-                        <h5 className="text-uppercase">OUR LATEST BLOG</h5>
+                        <h5 className="text-uppercase">OUR LATEST Segment</h5>
                         <ul className="list-unstyled ">
-                            <li><HashLink className="footer-link " to="#!">Latest Portrait</HashLink></li>
-                            <li><HashLink className="footer-link" to="#!">All Portrait</HashLink></li>
-                            <li><HashLink className="footer-link" to="#!">Book Portrait</HashLink></li>
+                            <li><HashLink className="footer-link " to="#!">Latest Glasses</HashLink></li>
+                            <li><HashLink className="footer-link" to="#!">All Glasses</HashLink></li>
+                            <li><HashLink className="footer-link" to="#!">Popular Glasses</HashLink></li>
                         </ul>
                     </div>
                     <div className="col-md-4 mb-md-0 mb-3">
                         <h5 className="text-uppercase">Our Services</h5>
                         <ul className="list-unstyled ">
-                            <li><HashLink className="footer-link " to="#!"></HashLink></li>
-                            <li><HashLink className="footer-link" to="#!">TIRE</HashLink></li>
-                            <li><HashLink className="footer-link" to="#!">CHECK LIGHTS</HashLink></li>
+                            <li><HashLink className="footer-link " to="#!">Anti-reflected Glasses</HashLink></li>
+                            <li><HashLink className="footer-link" to="#!">Foldable Glasses</HashLink></li>
+                            <li><HashLink className="footer-link" to="#!">Baby Glasses</HashLink></li>
                         </ul>
                     </div>
                   

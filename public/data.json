@@ -1,0 +1,90 @@
+[
+    {
+        "name": "Audi A3",
+        "brand": "Audi",
+        "price": "4,880,000",
+        "rating": 5,
+        "description": "The Audi A3 has a dynamic exterior design that reveals each muscular and chiseled detail and the MMI® touch display infotainment system features a 10.1″ screen, full of technical features and the optional Audi virtual cockpit and Audi connect makes the interior light up. It has a strong base engine and agile handling, so you can throw it hard into curves. As a survey, the A3 finished in 18th place out of 24 cars in the family car class. Audi as a brand finished 22nd out of 31 manufacturers. The Audi A3’s competitors are Mercedes A-Class, Ford Focus and cars in this segment.",
+        "img": "https://images.unsplash.com/photo-1604969653994-c7406a23af58?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1172&q=80"
+    },
+    {
+        "name": "2021 MUSTANG",
+        "brand": "Ford",
+        "price": "67,205,000",
+        "rating": 5,
+        "description": "Look no further for adrenaline-pumping performance. The 2021 Ford Mustang gives you off-the-rails exhilaration with high-powered engine options, responsive handling and a scorching design. And new this year, the Mustang Mach 1 becomes the most track-capable 5.0-liter Mustang ever, courtesy of a newly designed front end, Ford Performance parts and an available Handling Package.",
+        "img": "https://images.unsplash.com/photo-1584345604476-8ec5e12e42dd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+    },
+    {
+        "name": "The Aventador",
+        "brand": "Lamborghini",
+        "price": "4,880,000",
+        "rating": 5,
+        "description": "The Aventador has been created to anticipate the future, as demonstrated by the use of innovative technology, including a V12 engine and the extensive use of carbon fiber.The authentic design masterpieces together stark dynamism with aggression to produce a cutting edge carbon fiber monocoque. The interior of the Aventador combines high-level technology and luxury equipment with premium-quality materials, skilfully crafted with the expertise characteristic of the finest Italian traditions. A supercar family that has already become a legend in its own right. Discover technical specifications, dimensions, performance, and the detailed features of all the new Lamborghini Aventador models.",
+        "img": "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=452&q=80"
+    },
+    {
+        "name": "Porsche 911 GT3 (992)",
+        "brand": "Porsche",
+        "price": "4,880,000",
+        "rating": 5,
+        "description": "Porsche unveiled its new 992-generation Porsche 911 GT3 via digital livestream on YouTube. First deliveries are currently scheduled to begin sometime in the later half of 2021, where it may likely be designated as a 2022 model. This new GT3 becomes the seventh iteration of one of Porsche’s most established and beloved automobiles. More importantly, it continues to embody the spirit of previous GT3 models by amalgamating all that is awesome about the 911 – and the Porsche brand – in a single road car.The first Porsche bigwig introduced by presenter Sarah Elsser to offer insight into the project, was Dr. Frank-Steffen Walliser – former Porsche-Motorsport chief and current VP of the 911 model line. Dr. Walliser began by speaking candidly about the pressures associated with perpetually improving the GT3, but felt that the development team has fulfilled this goal with hard work; all of this, while facing the monumental challenge of navigating stricter emissions regulations and an industry-wide transition to EVs.",
+        "img": "https://images.unsplash.com/photo-1617659549774-292467fa092e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=419&q=80"
+    },
+    {
+        "name": "Ferrari 812 GTS",
+        "brand": "Ferrari",
+        "price": "4,880,000",
+        "rating": 5,
+        "description": "Maranello, 9 September 2019 – Exactly 50 years on from the debut of the last spider in the Ferrari range to sport a front-mounted V12, the 812 GTS hails a triumphant return for a model type that has played a pivotal role in the marque’s history since its foundation.The Ferrari V12 spider story features many iconic models and began in 1948 with the 166 MM, an authentic thoroughbred competition GT that won the two most prestigious endurance races in the world in 1949: the Mille Miglia and the 24 Hours of Le Mans. The last in that long lineage was the 1969 365 GTS4, also known as the Daytona Spider because of Ferrari’s legendary victory in the 1967 24 Hours of Daytona when two works 330 P4s and the NART-entered 412 P took the chequered flag side-by-side to occupy the top three places. The front-mounted V12 architecture has not been used in a Ferrari series-production spider since the 365 GTS4. That said, four special series limited editions have been launched: the 550 Barchetta Pininfarina in 2000, the Superamerica in 2005, the SA Aperta in 2010 and, most recently, the F60 America of which just 10 were built to celebrate Ferrari’s 60th year on the American market in 2014.",
+        "img": "https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+    },
+    {
+        "name": "McLaren 765LT",
+        "brand": "McLaren",
+        "price": "4,880,000",
+        "rating": 5,
+        "description": "the 765LT is 176 lbs lighter than a 720S, as well as having 45 more horsepower at 755 HP . It comes with a much more aggressive suspension setup, faster shifts, stronger acceleration, and Pirelli Trofeo R semi-slick tires as standard. Also standard are carbon-ceramic brake discs, a full titanium exhaust, and some active aerodynamics in the form of the rear spoiler. The front splitter, rear bumper, and spoiler are also made of Formula 1 grade composites, meaning extreme strength combined with ridiculous lightness. As well, because the car comes from McLaren Special Operations, it can be customized far beyond what a 720S can be. Colors, interior materials, even personalization options like having your initials sewn into the seats… whatever the customer wants, within reason, the customer can get",
+        "img": "https://images.unsplash.com/photo-1626141890433-f3a59538a8f8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+    },
+    {
+        "name": "Hyundai Accent",
+        "brand": "Hyundai",
+        "price": "4,880,000",
+        "rating": 5,
+        "description": "The Hyundai Accent is a subcompact car that provides great controls, a smooth ride, comfortable seats, and good safety. The Accent has plenty of passenger space and user-friendly controls. The interior is pretty good considering the price point with roomy seats and nice features. The seats could use a little more support, but they’re comfortable overall. Chevrolet Sonic Sedan, Nissan Versa and Toyota Yaris Sedan are the rivals of the Hyundai Accent. This beauty could be found at Fair Technology Ltd as they are the authorized partner of Hyundai Passenger Vehicles in Bangladesh.",
+        "img": "https://images.unsplash.com/photo-1629421889558-e2315ffc869d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80"
+    },
+    {
+        "name": "Range Rover Evoque",
+        "brand": "Range Rover",
+        "price": "3,964,800",
+        "rating": 5,
+        "description": "The Range Rover Evoque is a subcompact luxury crossover SUV with a tough-built quality and great performance. It is equipped with a powerful 1997cc engine that produces 430Nm @ 1750-2500rpm maximum torque and with its all-wheel-drive system this ensures a confident drive, on or off-road or on a slippery road. Audi Q5, BMW X4 and Land Rover Discovery Sport are considered as the rival of the Range Rover Evoque.",
+        "img": "https://images.unsplash.com/photo-1620547316190-289b3899e010?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=465&q=80"
+    },
+    {
+        "name": "Audi A8L",
+        "brand": "Audi",
+        "price": "21,880,000",
+        "rating": 5,
+        "description": "Equipped with a standard 3.0-liter turbocharged V6 engine along with an available 3.0-liter Plug-in hybrid (60 TFSI e) and 4.0-liter twin-turbocharged engine the Audi A8L checks all the critical boxes for a modern mid-size luxury vehicle. For a sporty presence, the iconic Singleframe® grille is installed along with sensors to help you maintain speed, following distance and lane position. This executive luxury sedan is available in Bangladesh and can be found at Audi Bangladesh – Progress Motors Imports Limited.",
+        "img": "https://images.unsplash.com/photo-1627612839512-7f7d01226ec5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80"
+    },
+    {
+        "name": "Audi Q3",
+        "brand": "Audi",
+        "price": "6,880,000",
+        "rating": 5,
+        "description": "The Audi Q3 is a luxury vehicle with standard Quattro all-wheel drive, bold exterior and interior design is pure luxury. It also offers many technologies and connectivity features along with high-gloss black accents on the window surrounds and bumper turns this into a formidable SUV. Installed Driver Assistance features help to alert drivers and passengers of activity around the vehicle. Progress Motors Imports Limited is the authorized dealer of Audi in Bangladesh. BMW X1, Mercedes GLA and Range Rover Evoque hatchback are the main competitors of this beauty.",
+        "img": "https://images.unsplash.com/photo-1592841242879-cae7035f7551?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+    },
+    {
+        "name": "BMW X3",
+        "brand": "BMW",
+        "price": "54,880,000",
+        "rating": 5,
+        "description": "The BMW X3 is a small compact luxury crossover SUV. The X3 ranks at the top of the luxury compact SUV class because of its spacious interior, easy-to-use features, strong engine performance, smooth handling.",
+        "img": "https://images.unsplash.com/photo-1619362280066-d854f4467a15?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1215&q=80"
+    }
+]
