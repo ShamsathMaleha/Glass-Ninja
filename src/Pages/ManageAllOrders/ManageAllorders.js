@@ -6,14 +6,14 @@ import {trashO} from 'react-icons-kit/fa/trashO';
 import {ic_done_all} from 'react-icons-kit/md/ic_done_all';
 
 const ManageAllorders = () => {
-    const { user,loading,setLoading } = useAuth()
+    const {setLoading } = useAuth()
     const [mypurchase, setMyPurchase] = useState([])
     
     
 
     useEffect(() => {
        
-        fetch('https://limitless-coast-94755.herokuapp.com/purchase')
+        fetch('https://immense-peak-94370.herokuapp.com/purchase')
             .then(res => res.json())
             .then(data => {
                
@@ -25,7 +25,35 @@ const ManageAllorders = () => {
     }, [mypurchase])
   
 
+    const handleStatus = (id, e) => {
 
+        const proceed = window.confirm('Are you sure ?')
+        if (proceed) {
+
+
+
+            const orderStatus = 'shipped';
+            const orderData = {
+                status: orderStatus
+            }
+
+            fetch(`https://immense-peak-94370.herokuapp.com/purchase/${id}`, {
+                method: 'PUT',
+                headers: { 'content-Type': 'application/json' },
+                body: JSON.stringify(orderData)
+            })
+                .then(res => res.json())
+                .then(data => {
+                    if (true) {
+
+                        alert('update successfully')
+                        setMyPurchase(data)
+                        
+                    }
+                })
+            e.preventDefault()
+        }
+    }
 
    
    
@@ -33,7 +61,7 @@ const ManageAllorders = () => {
 
         const proceed = window.confirm('are you sure, you want to delete?');
         if(proceed){
-            const url = `https://limitless-coast-94755.herokuapp.com/purchase/${id}`
+            const url = `https://immense-peak-94370.herokuapp.com/purchase/${id}`
             fetch (url,{
                 method:'DELETE',
                
@@ -61,7 +89,7 @@ const ManageAllorders = () => {
                             <tr>
                                 <th colSpan="3">Name</th>
                                 <th>Email</th>
-                                <th>Car Name</th>
+                                <th>Glass Name</th>
                                 <th colSpan="3">Price</th>
                                 <th>Status</th>
                                 <th colSpan="2">Action</th>
@@ -79,7 +107,13 @@ const ManageAllorders = () => {
                                             <td>{or.status}</td>
                                             
                                             <td><button onClick={()=>handleDeleteUser(or._id)} className="btn btn-outline-danger"><Icon size={15} icon={trashO} /></button></td>
-                                            
+                                            <td>
+                                                <form onSubmit={(e) => handleStatus(or._id, e)}>
+                                                    <input hidden type="text" value="confirm" />
+                                                    <button type="submit" className="btn btn-outline-success"><Icon size={15} icon={ic_done_all} /></button>
+
+                                                </form>
+                                            </td>
                                         </tr>
                                     </>)
                                 }
@@ -87,7 +121,7 @@ const ManageAllorders = () => {
 </tbody>
                         </>
                         :
-                        'Select Your Tour Place First'
+                        'Select Your Glass First'
                     }
                 </Table>
             }

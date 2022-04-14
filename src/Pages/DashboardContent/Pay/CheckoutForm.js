@@ -1,14 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js';
 import { Spinner } from 'react-bootstrap';
-// import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
+
+
+
 const CheckoutForm = (props) => {
     const {name, _id} = props.order;
     const {price} = props.item;
     const stripe = useStripe();
     const elements = useElements();
-    // const {user}= useAuth()
-    // const history =useHistory()
+    const {user}= useAuth()
+    const navigate =useNavigate()
 const priceinfo= parseInt(price)
 
   const [error, setError]= useState('');
@@ -17,11 +21,10 @@ const priceinfo= parseInt(price)
   const [process, setprocess]=useState(false)
 
 
-//   https://morning-dusk-71032.herokuapp.com
-    // http://localhost:5000
+
   useEffect(()=>{
     
-    fetch('https://limitless-coast-94755.herokuapp.com/create-payment-intent',{
+    fetch('https://immense-peak-94370.herokuapp.com/create-payment-intent',{
       method: 'POST',
       headers: {
         'content-type': 'application/json',
@@ -56,7 +59,7 @@ const priceinfo= parseInt(price)
           });
       
           if (error) {
-            // console.log('[error]', error);
+            console.log('[error]', error);
             setError(error.message)
             
           } else {
@@ -97,7 +100,7 @@ const priceinfo= parseInt(price)
             last4: paymentMethod.card.last4,
             transaction: paymentIntent.client_secret.slice('_secret')[0]
           }
-          const url = `https://limitless-coast-94755.herokuapp.com/purchase/${_id}`;
+          const url = `https://immense-peak-94370.herokuapp.com/purchase/${_id}`;
           fetch(url, {
             method: 'PUT',
             headers: {
@@ -109,7 +112,7 @@ const priceinfo= parseInt(price)
           .then(res=>res.json())
           // .then(data=>{
           //   alert('Payment Successful')
-          //   history.push('/')
+          // navigate('/')
           // })
         }
 

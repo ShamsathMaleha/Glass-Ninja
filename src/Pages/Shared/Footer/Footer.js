@@ -9,7 +9,7 @@ const Footer = () => {
 
     return (
         <footer className="bg text-white font-small  pt-4">
-            <div className="container-fluid text-center text-md-left">
+            <div className="container-fluid text-center mt-5 text-md-left">
                 <div className="row">
                     <hr className=" w-100 d-md-none pb-0" />
 
@@ -67,7 +67,7 @@ const Footer = () => {
 
             <div className="footer-copyright text-center py-3">
                 <h6 className=" me-end">© 2021 copyright:
-                    <Link to="/" className="footer-link ">cargallery.com </Link>
+                    <Link to="/" className="footer-link ">glasskart.com </Link>
 
                 </h6>
 

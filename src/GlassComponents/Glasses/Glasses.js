@@ -10,7 +10,7 @@ const Glasses = () => {
     const [glasses, setGlasses] =useState([])
 
     useEffect(()=>{
-        fetch('./data.json')
+        fetch('https://immense-peak-94370.herokuapp.com/glasses')
         .then(res => res.json())
         .then(data => setGlasses(data))
     },[])

@@ -1,18 +1,26 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
+
 
 const Glass = (props) => {
-    const {name,img,price}= props.glass
+
+
+  const navigate = useNavigate()
+  const handleBuy =()=>{
+    navigate(`/purchase/${_id}`)
+  }
+    const {name,img,price,_id}= props.glass
     return (
-        <div>
-            <Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" src={img}/>
+        <div className="d-flex justify-content-center">
+            <Card  style={{ width: '18rem' }}>
+  <Card.Img variant="top" style={{height: '190px',objectFit:'cover'}} src={img}/>
   <Card.Body>
     <Card.Title>{name}</Card.Title>
     <Card.Text>
    {price}
     </Card.Text>
-    <button variant="primary">Go somewhere</button>
+    <button onClick={handleBuy} className="btn btn-info">Buy now</button>
   </Card.Body>
 </Card>
         </div>

@@ -12,20 +12,20 @@ const stripeLoad = loadStripe('pk_test_51K073dH9Kuv7UeNyycym0fwuYdUHloSde7mO48UY
 // STRIPE=pk_test_51K073dH9Kuv7UeNyycym0fwuYdUHloSde7mO48UY49sDivKoicG5NHPWU674Gg79oUB87gNesOUeUDP1NqE5qmEU00CMIjMzgp
 
 const Pay = () => {
-const {OId}=useParams();
+const {oID}=useParams();
 const [order,setOrder]=useState({})
 const [item,setItem]=useState({})
 
       
     useEffect(() => {
         //  setLoading(true)
-        fetch(`https://limitless-coast-94755.herokuapp.com/purchase/${OId}`)
+        fetch(`https://immense-peak-94370.herokuapp.com/purchase/${oID}`)
             .then(res => res.json())
             .then(data => {
               
               setItem(data.purchase)
                 setOrder(data)
-                
+               console.log(data) 
             })
            
     }, [])

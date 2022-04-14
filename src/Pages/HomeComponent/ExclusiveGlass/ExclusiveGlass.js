@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Row, Spinner } from 'react-bootstrap';
+import { Row, Spinner } from 'react-bootstrap';
 import Glass from '../Glass/Glass';
 
-
-const Glasses = () => {
-
+const ExclusiveGlass = () => {
     const [glasses, setGlasses] = useState([])
 
 
@@ -12,13 +10,16 @@ const Glasses = () => {
     useEffect(() => {
         fetch('https://immense-peak-94370.herokuapp.com/glasses')
             .then(res => res.json())
-            .then(data => setGlasses(data))
+            .then(data =>{
+                const filter = data.filter(d=>d.category === 'sunglass')
+                setGlasses(filter)
+            } )
     }, [])
 
     const glassData = glasses.slice(0,8)
     return (
-        <div>
-          <h1>Most Wanted Glasses</h1>
+        <div id="latest">
+          <h1>Exclusive Glasses</h1>
             {
                 !glasses.length ?  
                 <div className="text-center mt-5">
@@ -26,22 +27,17 @@ const Glasses = () => {
                 </div>
            :
 
-           <Container >
-
-               
-<Row xs={1} md={2} lg={4} className="g-4  my-5">
+           
+                <Row xs={1} md={2} lg={4} className="g-4 my-5 w-100">
                     {glassData.map((glass, idx) => (
                         <Glass
 
                             glass={glass}
                         />
                     ))}
-                </Row>
-           </Container>
-                
-                }
+                </Row>}
                 </div>
     );
 };
 
-export default Glasses;
+export default ExclusiveGlass;

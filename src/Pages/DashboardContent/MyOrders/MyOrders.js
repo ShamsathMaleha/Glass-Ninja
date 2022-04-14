@@ -3,17 +3,18 @@ import { Table } from 'react-bootstrap';
 import useAuth from '../../../hooks/useAuth';
 import { Icon } from 'react-icons-kit';
 import {trashO} from 'react-icons-kit/fa/trashO';
+import { useNavigate } from 'react-router-dom';
 // import { useHistory } from 'react-router-dom';
 
 const MyOrders = () => {
     const { user,setUser,loading,setLoading } = useAuth()
     
     const [myOrder, setMyOrder] = useState([])
-    // const history = useHistory()
+    const navigate = useNavigate()
     
     useEffect(() => {
         //  setLoading(true)
-        fetch('https://limitless-coast-94755.herokuapp.com/purchase')
+        fetch('https://immense-peak-94370.herokuapp.com/purchase')
             .then(res => res.json())
             .then(data => {
               
@@ -27,7 +28,7 @@ const MyOrders = () => {
     }, [myOrder])
 
     const handlePayment= id=>{
-        // history.push(`/dashboard/pay/${id}`)
+        navigate(`/dashboard/pay/${id}`)
 
     }
 
@@ -35,7 +36,7 @@ const MyOrders = () => {
 
         const proceed = window.confirm('are you sure, you want to delete?');
         if(proceed){
-            const url = `https://limitless-coast-94755.herokuapp.com/purchase/${id}`
+            const url = `https://immense-peak-94370.herokuapp.com/purchase/${id}`
             fetch (url,{
                 method:'DELETE',
                
@@ -55,8 +56,10 @@ const MyOrders = () => {
     }
     return (
         <div className="h-100">
-        <h1 className=" text-center mt-5">My <span className="text-">Order</span> </h1>
+        <h1 className=" text-center mt-5">My<span className="text-">Order</span> </h1>
         <div className="h-100 table-section text-center p-5">
+
+
         {!loading ? 
             <Table className="  mb-5" hover>
             {myOrder.length > 0 ?
@@ -65,7 +68,7 @@ const MyOrders = () => {
                         <tr>
                             <th >Name</th>
                             <th>Email</th>
-                            <th>Bike Name</th>
+                            <th>Glass Name</th>
                             <th>Price</th>
                             <th>Status</th>
                             <th colSpan="2">Action</th>
@@ -94,7 +97,7 @@ const MyOrders = () => {
 </tbody>
                     </>
                     :
-                    'No car purchase'
+                    'No Glass purchase'
                 }
             </Table>
             : ''

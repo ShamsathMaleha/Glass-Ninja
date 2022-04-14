@@ -2,12 +2,15 @@ import React from 'react';
 import {  useLocation } from 'react-router-dom';
 import useAuth from '../hooks/useAuth';
 import {Navigate} from 'react-router-dom'
+import { Spinner } from 'react-bootstrap';
 
 const PrivateRoute = ({ children, ...rest }) => {
 
-    const { user, isLoading } = useAuth();
+    const { user, loading } = useAuth();
     let location = useLocation();
-    if (isLoading) { return <h1>loading</h1> }
+    if (loading) { return <div className="text-center mt-5">
+    <Spinner animation="grow" />
+</div> }
 
     if (!user.email) {
 

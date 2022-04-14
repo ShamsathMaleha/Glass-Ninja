@@ -4,14 +4,14 @@ import useAuth from '../../hooks/useAuth';
 import { Icon } from 'react-icons-kit';
 import {trashO} from 'react-icons-kit/fa/trashO';
 
-const ManageBike = () => {
-    const { user,setUser,loading,setLoading } = useAuth()
+const ManageGlass = () => {
+    const { loading } = useAuth()
     
     const [myOrder, setMyOrder] = useState([])
     
     useEffect(() => {
         //  setLoading(true)
-        fetch('https://limitless-coast-94755.herokuapp.com/bikes')
+        fetch('https://immense-peak-94370.herokuapp.com/glasses')
             .then(res => res.json())
             .then(data => {
               
@@ -27,7 +27,7 @@ const ManageBike = () => {
 
         const proceed = window.confirm('are you sure, you want to delete?');
         if(proceed){
-            const url = `https://morning-dusk-71032.herokuapp.com/bikes/${id}`
+            const url = `https://immense-peak-94370.herokuapp.com/glasses/${id}`
             fetch (url,{
                 method:'DELETE',
                
@@ -47,7 +47,7 @@ const ManageBike = () => {
     }
     return (
         <div className="h-100">
-        <h1 className=" text-center mt-5">Manage Car </h1>
+        <h1 className=" text-center mt-5">Manage Glass</h1>
         <div className="h-100 table-section text-center p-5">
         {!loading ? 
             <Table className=" w-100 mb-5" hover>
@@ -56,7 +56,7 @@ const ManageBike = () => {
                     <thead>
                         <tr>
                             <th>Name</th>
-                            <th>Brand</th>
+                           
                             <th>Price</th>
                             
                             <th colSpan="2">Action</th>
@@ -68,7 +68,7 @@ const ManageBike = () => {
                                 myOrder.map(or => <>
                                     <tr>
                                         <td>{or.name} </td>
-                                        <td>{or.brand} </td>
+                                        
                                         <td>{or.price}</td>
                                         
                                         <td><button onClick={()=>handleDeleteUser(or._id)} className="btn btn-outline-danger"><Icon size={15} icon={trashO} /> </button></td>
@@ -79,7 +79,7 @@ const ManageBike = () => {
 </tbody>
                     </>
                     :
-                    'Please select a tour place first'
+                    'Please select a Glass'
                 }
             </Table>
             : ''
@@ -92,4 +92,4 @@ const ManageBike = () => {
     );
 };
 
-export default ManageBike;
+export default ManageGlass;

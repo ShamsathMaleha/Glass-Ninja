@@ -1,12 +1,15 @@
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+
 import useAuth from '../../hooks/useAuth';
 import './Login.css'
 const Login = () => {
+
+
     const {signInUsingGoogle,handlePassword,handleEmail,email,password}= useAuth();
     const navigate = useNavigate();
+    const location = useLocation();
     const [error, setError]= useState('');
     const [loading, setLoading] = useState(true)
     const [user, setUser]= useState({});
@@ -30,7 +33,7 @@ const Login = () => {
               console.log(user)
               setError('')
               e.target.reset()
-            //   history.push(redirect_uri)
+              navigate('/')
             })
             .catch(error=>{
               setError(error.message)
@@ -44,7 +47,7 @@ const Login = () => {
     }
 
     const handleGoogleLogin = () => {
-        signInUsingGoogle()
+        signInUsingGoogle(location,navigate)
             .then(result => {
                 navigate('/')
                 
