@@ -41,7 +41,7 @@ const AddNewGlass = () => {
         <div>
             <Container>
                 <Row className="justify-content-center">
-                    <h2 className="text-center mb-4 mt-5">Add New Bike</h2>
+                    <h2 className="text-center mb-4 mt-5">Add New Glass</h2>
                     <Col xs={5} sm={6} lg={4} className="text-center form-class pb-3">
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <input required placeholder="Enter Glass Name" {...register('name', { required: true })}  /> {/* register an input */}

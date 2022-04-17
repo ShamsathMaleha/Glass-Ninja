@@ -9,6 +9,8 @@ import logo from '../../../components/images/logo/Screenshot (69).png'
 
 import './Header.css'
 
+import Menus from '../../../components/Menu/Menus';
+
 const Header = () => {
     const {user,logOut} = useAuth()
     const navigate =useNavigate();
@@ -35,13 +37,20 @@ const Header = () => {
 
             <div className=" w-full d-flex  justify-content-center">
             {user.email &&
-                            <Nav className=""><h1 onClick={logOut} className="btn btn-outline-danger w-100 fw-bold ">Logout </h1></Nav>
+                            <div> 
+                                 <Menus></Menus>
+                                 {/* <Nav className=""><h1 onClick={logOut} className="btn btn-outline-danger w-100 fw-bold ">Logout </h1></Nav> */}
+
+                            </div>
                         }
+                        
                        {!user.email &&
                             <Nav className="">
                                 <h1 onClick={loginHandler} className="btn btn-outline-dark w-100 fw-bold ">Login </h1>
                             {/* <Nav.Link  as={HashLink} to="/login" className="btn btn-outline-dark" >Login</Nav.Link> */}
+                        
                         </Nav>
+                       
                        } 
             </div>
 

@@ -1,0 +1,47 @@
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+a.link{
+    text-decoration: none;
+}
+
+.sidebar{
+    background: rgb(155, 156, 168) ;
+    color: white;
+    height: 100vh;
+
+}
+.top-section{
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+    font-size: 30px;
+}
+.logo{
+    line-height: 0;
+    font-size:18px
+}
+.link{
+    display: flex;
+    color: white;
+    gap: 10px;
+    border-right: 4px solid transparent;
+    transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    padding: 5px 10px;
+}
+.link:hover{
+    border-right: 4px solid white;
+    transition: 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    background: grey ;
+    color: white;
+}
+link_text{
+    white-space: nowrap ;
+    font-size: 15px;
+}
